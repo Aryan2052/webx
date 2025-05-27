@@ -1,0 +1,27 @@
+Here's the revised version with your note converted into the **2nd point**, keeping the structure clean and consistent:
+
+---
+
+## The Gradio Web App *(Browseruse enabled)*
+
+1. Initially install all the required libs and their dependencies:
+
+   ```pwsh
+   pip install -r requirements.txt
+   ```
+
+2. Install **Playwright** (after installing the requirements):
+
+   ```pwsh
+   playwright install
+   ```
+
+3. Next, run `app.py` using:
+
+   ```pwsh
+   python app.py
+   ```
+
+---
+
+Let me know if you'd like to format it for Markdown docs or add extra instructions!
