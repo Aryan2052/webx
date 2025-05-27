@@ -1,27 +1,33 @@
-Here's the revised version with your note converted into the **2nd point**, keeping the structure clean and consistent:
+Got it! Here's the properly formatted **installation and usage guide** in Markdown that you can paste into your GitHub repo's `README.md` or a separate `INSTALL.md` file:
 
 ---
 
-## The Gradio Web App *(Browseruse enabled)*
+## 🚀 Gradio Web App (Browser Use Enabled)
 
-1. Initially install all the required libs and their dependencies:
+### 🧪 1. Install Requirements
 
-   ```pwsh
-   pip install -r requirements.txt
-   ```
+First, install all the required libraries and dependencies:
 
-2. Install **Playwright** (after installing the requirements):
+```bash
+pip install -r requirements.txt
+```
 
-   ```pwsh
-   playwright install
-   ```
+### 🧱 2. Install Playwright
 
-3. Next, run `app.py` using:
+After installing the requirements, install the browser dependencies for Playwright:
 
-   ```pwsh
-   python app.py
-   ```
+```bash
+playwright install
+```
+
+### 🖥️ 3. Run the App
+
+Start the application with:
+
+```bash
+python app.py
+```
 
 ---
 
-Let me know if you'd like to format it for Markdown docs or add extra instructions!
+Let me know if you'd like to include virtual environment setup instructions or a `requirements.txt` sample too!
