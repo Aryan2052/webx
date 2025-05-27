@@ -1,33 +1,93 @@
-Got it! Here's the properly formatted **installation and usage guide** in Markdown that you can paste into your GitHub repo's `README.md` or a separate `INSTALL.md` file:
+## Web Data Extractor Pro: Interest Rates & Real Estate Listings
 
----
+A powerful web scraping tool built with Gradio that uses Google's Gemini API and BrowserUse for intelligent web interaction and data extraction.
 
-## 🚀 Gradio Web App (Browser Use Enabled)
+### Prerequisites
 
-### 🧪 1. Install Requirements
+1. Python 3.7+
+2. Google Gemini API Key
+3. Playwright for browser automation
 
-First, install all the required libraries and dependencies:
+### Installation
 
+1. Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🧱 2. Install Playwright
-
-After installing the requirements, install the browser dependencies for Playwright:
-
+2. Install Playwright browsers:
 ```bash
 playwright install
 ```
 
-### 🖥️ 3. Run the App
-
-Start the application with:
-
+3. Run the application:
 ```bash
 python app.py
 ```
 
----
+4. Set up your Gemini API key:
+   - Create a `.env` file in the app directory
+   - Add your API key: `GEMINI_API_KEY=your_api_key_here`
 
-Let me know if you'd like to include virtual environment setup instructions or a `requirements.txt` sample too!
+### Features
+
+#### Core Capabilities
+- **Interest Rate Extraction**
+  - Extracts structured interest rate data from banking websites
+  - Supports multiple rate categories (savings, fixed deposits, loans)
+  - Handles dynamic content loading and navigation
+
+- **Real Estate Listings**
+  - Extracts property details including:
+    - Property name and address
+    - Price (formatted in INR)
+    - Number of bedrooms
+    - Property size
+    - Available amenities
+
+#### Technical Features
+- Intelligent web interaction using Gemini API
+- Automated browser control with Playwright
+- Progress tracking and status updates
+- Structured JSON data output
+- Error handling and recovery
+- Custom extraction instructions support
+
+### Usage
+
+1. Access the web interface at the provided URL
+
+2. For Interest Rate Extraction:
+   - Enter the banking website URL
+   - Select "Interest Rate Extraction"
+   - Add any specific instructions (e.g., "Click View Rates button")
+
+3. For Real Estate Listings:
+   - Enter the real estate website URL
+   - Select "Real Estate Listings"
+   - Specify location (e.g., "Mumbai, India")
+   - Add filtering instructions if needed
+
+### Implementation Details
+
+- Built with Gradio for the web interface
+- Uses BrowserUse for browser automation
+- Integrates Google's Gemini API for intelligent web interaction
+- Implements async/await for efficient operation
+- Supports custom extraction instructions
+
+### Notes
+
+- The tool requires a stable internet connection
+- Some websites may have anti-scraping measures
+- Processing time varies based on website complexity
+- Results are formatted in structured JSON for easy parsing
+
+### Troubleshooting
+
+If you encounter issues:
+1. Ensure your Gemini API key is correctly set
+2. Check your internet connection
+3. Verify the target website is accessible
+4. Try adding more specific extraction instructions
+5. Check the console for detailed error messages
